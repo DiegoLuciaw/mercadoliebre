@@ -1,55 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MercadoLiebre</title>
-</head>
-<body>
-    <header class="main-header">
-        <div class="main-header-top-bar">
-            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo Mercado Liebre" class="logo"></a>
-            <div class="busqueda-bar">
-                <input type="text">
-                <a href="#"><i class="fas fa-search alineacion"></i></a>
-            </div>
-            <h2 class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito
-            </h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="header-home">
+      <div class="top-header">
+        <div class="logo-search">
+          <div class="logo">
+            <a href="/"
+              ><img
+                src="public/img/logo-mercado-liebre.svg"
+                alt="Logo MercadoLiebre"
+              />
+            </a>
+          </div>
+          <div class="container">
+            <form action="#" method="GET" class="search-bar">
+              <input
+                type="text"
+                id="search-box"
+                placeholder="Buscar productos, marcas y más..."
+              />
+              <button type="submit" class="nav-search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="burguer-button">
-            <i class="fas fa-bars ajuste"></i>
-        </div>
-        <nav class="main-navbar">
-            <!-- <p> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p> -->
-                <ul class="left-navbar">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-                <ul class="right-navbar">
-                    <li class="alineacion"><a href="/registro">Creá tu cuenta <i class="fas fa-user"></i></a></li> 
-                    <li class="alineacion"><a href="#">Ingresá <i class="fas fa-sign-in-alt alineacion"></i></a></li> 
-                    <li class="alineacion"><a href="#">Mis compras <i class="fas fa-shopping-basket alineacion"></i></a>
-                </ul>
-        </nav>        
+        <p id="buy">
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="header-navbar">
+        <ul type="none" class="left-navbar">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul type="none" class="right-navbar">
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div id="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
-     
-       
-    <main>
-    
-
-    <div>
-    
-
-    </div>
+    <section class="banner">
+      <img
+        id="banner"
+        src="img/img-home-banner.jppg"
+        alt="banner de ofertas"
+      />
+    </section>
+    <main class="main-home">
+      <h2 class="titles">Basado en tu última visita</h2>
+      <section class="last-visit">
+        <div class="products">
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-cafetera-moulinex.jpg"
+              alt="Cafetera"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$6.770</p>
+                <p class="discount">40% off</p>
+              </div>
+              <h4 class="description">Cafetera Moulinex</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-macbook-pro-2019.jpg"
+              alt="Macbook Pro"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$230.000</p>
+                <p class="discount">20% off</p>
+              </div>
+              <h4 class="description">MacBook Pro 2019</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-samsung-galaxy-s10.jpg"
+              alt="Samsung Galaxy"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$70.500</p>
+                <p class="discount">10% off</p>
+              </div>
+              <h4 class="description">Samsung Galaxy S10</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-tv-samsung-smart.jpg"
+              alt="Smart TV"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$23.200</p>
+                <p class="discount">5% off</p>
+              </div>
+              <h4 class="description">SmartTv Samsung 43"</h4>
+            </div>
+          </article>
+        </div>
+      </section>
+      <h2 class="titles">Ofertas</h2>
+      <section class="offers">
+        <div class="products">
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-cafetera-moulinex.jpg"
+              alt="Cafetera"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$6.770</p>
+                <p class="discount">40% off</p>
+              </div>
+              <h4 class="description">Cafetera Moulinex</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-macbook-pro-2019.jpg"
+              alt="Macbook Pro"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$230.000</p>
+                <p class="discount">20% off</p>
+              </div>
+              <h4 class="description">MacBook Pro 2019</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-samsung-galaxy-s10.jpg"
+              alt="Samsung Galaxy"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$70.500</p>
+                <p class="discount">10% off</p>
+              </div>
+              <h4 class="description">Samsung Galaxy S10</h4>
+            </div>
+          </article>
+          <article>
+            <img
+              class="product-picture"
+              src="/img/img-tv-samsung-smart.jpg"
+              alt="Smart TV"
+            />
+            <div class="main-article">
+              <i class="fas fa-truck"></i>
+              <div class="article-description">
+                <p class="price">$23.200</p>
+                <p class="discount">5% off</p>
+              </div>
+              <h4 class="description">SmartTv Samsung 43"</h4>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-
-
-
+    <footer class="footer-home">
+      <section class="section-footer">
+        <br />
+        <article>
+          <div><i class="fas fa-credit-card"></i></div>
+          <h4>Pagá con tarjeta o en efectivo</h4>
+          <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </article>
+        <br />
+        <article>
+          <div><i class="fas fa-gift"></i></div>
+          <h4>Envío gratis desde los $2.500</h4>
+          <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </article>
+        <br />
+        <article>
+          <div><i class="fas fa-user-shield"></i></div>
+          <h4>Seguridad, de principio a fin</h4>
+          <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+            puedas hacer, porque estás siempre protegid@.
+          </p>
+        </article>
+        <br />
+      </section>
+      <div id="copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: white;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #ececec;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /*HEADER:*/
+  .header-login {
+    background-color: #eac926;
+    padding: 5%;
+  }
+  .top-header {
+    padding-top: 20px;
+  }
+  .logo {
+    width: 50%;
+    padding-right: 15px;
+    max-width: 300px;
+  }
+  .logo-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .container {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-bar {
+    flex-grow: 7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: white;
+  }
+  .search-bar input {
+    flex: 1;
+    border: 0;
+    font-size: 15px;
+    color: #666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .search-bar button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #666666;
+    transition: all 200ms;
+  }
+  .search-bar button:hover {
+    color: #0022aa;
+  }
+  #buy {
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+  }
+  .header-navbar {
+    display: none;
+  }
+  div#burger-menu {
+    display: flex;
+    justify-content: center;
+  }
+  div#burger-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #104aa2;
+    padding: 5px;
+    margin: auto;
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+    border-radius: 10%;
+  }
+  /*MAIN*/
+  .main-login {
+    margin: auto;
+    width: 90%;
+    font-size: 14px;
+    padding: 20px 0px;
+  }
+  .form-login {
+    padding: 10px 0px;
+  }
+  .text-box {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  .send-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #0044aa;
+    transition: all 300ms;
+  }
+  .send-button:hover {
+    background-color: #0022aa;
+  }
+  /*FOOTER:*/
+  .footer-login {
+    background-color: white;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .section-footer div {
+    display: flex;
+    justify-content: center;
+    color: #104aa2;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .section-footer i {
+    transition: color 100ms;
+  }
+  .section-footer i:hover {
+    color: #eac926;
+  }
+  .footer-login h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #676767;
+    margin: 0px;
+  }
+  .footer-login p {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    color: #676767;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0px;
+    line-height: 19px;
+  }
+  #copy {
+    margin-left: 20px;
+    padding: 15px;
+    color: #676767;
+  }
+  /*MEDIA QUERIES*/
+  /*Mobile*/
+  @media (max-width: 600px) {
+    .header-navbar {
+      display: none;
+    }
+  }
+  /*Tablet*/
+  @media (min-width: 600px) {
+    .header-login {
+      max-width: 992px;
+      padding: 0%;
+    }
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2vw;
+    }
+    .logo {
+      width: 210px;
+    }
+    .logo img {
+      width: 210px;
+      padding-right: 15px;
+    }
+    .container {
+      width: 100%;
+    }
+    p#buy {
+      width: 30%;
+      text-align: center;
+    }
+    .right-navbar li a,
+    .left-navbar li a {
+      text-decoration: inherit;
+      color: inherit;
+    }
+    .header-navbar {
+      display: flex;
+      text-decoration: inherit;
+      color: inherit;
+      padding: 15px;
+      justify-content: space-between;
+    }
+    .header-navbar ul {
+      display: flex;
+    }
+    .header-navbar li {
+      margin: 7px;
+    }
+    div#burger-menu {
+      display: none;
+    }
+    .main-login {
+      width: 50%;
+    }
+  }
+  /*Desktop*/
+  @media (min-width: 992px) {
+    .header-login {
+      max-width: 1199px;
+    }
+    .footer-login {
+      padding-top: 40px;
+    }
+    .section-footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .footer-login article {
+      width: 30%;
+    }
+    .footer-login h4 {
+      font-size: 19px;
+    }
+    .footer-login p {
+      font-size: 14px;
+    }
+    .footer-login #copy {
+      margin: 20px 0px 0px 20px;
+    }
+  }
+  /*Extra large devices*/
+  @media (min-width: 1200px) {
+    .header-login {
+      max-width: none;
+    }
+    #buy {
+      max-width: none;
+    }
+  }
